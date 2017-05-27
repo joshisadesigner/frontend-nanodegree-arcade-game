@@ -21,8 +21,8 @@ var Player = function() {
   // Placing on the center of the canvas
   // as the canvas width is 505 and each tile o cupy an area of 101 height and
   // 80px width with a tilew variable
-  this.x = 0 ;
-  this.y = -20 ; // placed on the first grass row
+  this.x = ( canvasw / 2 ) - ( tilew / 2 ) + 40 ;
+  this.y = ( canvash - tileh ) - ( tileh + 20 ); // placed on the first grass row
 }
 
 // Update the enemy's position, required method for game
@@ -32,7 +32,6 @@ Enemy.prototype.update = function(dt) {
     // which will ensure the game runs at the same speed for
     // all computers.
     this.x += ( this.speed * dt );
-    console.log( this.x );
 };
 
 // Draw the enemy on the screen, required method for game
@@ -57,19 +56,19 @@ Player.prototype.render = function() {
 Player.prototype.handleInput = function( key ) {
   switch( key ){
     case 'up' :
-      if ( this.y > 20 ){ this.y -= 80; }
+      if ( this.y > 0 ){ this.y -= 80; }
       console.log( 'Boy is at y = ' + this.y + '(up)');
       break;
     case 'down' :
-    if ( this.y < ( canvash - tileh * 3 ) ){ this.y += 80 ; }
+    if ( this.y < 350 ){ this.y += 80 ; }
       console.log( 'Boy is at y = ' + this.y + '(down)');
       break;
     case 'left' :
-      if ( this.x > 20 ){ this.x -= 101; }
+      if ( this.x > 0 ){ this.x -= 101; }
       console.log( 'Boy is at x = ' + this.x + '(right)');
       break;
     case 'right' :
-    if ( this.x < ( canvasw - tilew ) ){ this.x += 101 ; }
+    if ( this.x < 350 ){ this.x += 101 ; }
       console.log( 'Boy is at x = ' + this.x + '(left)');
       break;
   }
