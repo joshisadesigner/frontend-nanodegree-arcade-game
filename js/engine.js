@@ -57,6 +57,7 @@ var Engine = (function(global) {
          * function again as soon as the browser is able to draw another frame.
          */
         win.requestAnimationFrame(main);
+        playerReachesWater()
     }
 
     /* This function does some initial setup that should only occur once,
@@ -95,6 +96,37 @@ var Engine = (function(global) {
             enemy.update(dt);
         });
         player.update();
+    }
+
+    /* This functions writes 2 sentences on the canvas so the user can
+     * know he won the game.
+     */
+    function playerReachesWater() {
+      if ( player.y < 74 ) {
+        ctx.font = '28px Impact';
+        ctx.textAlign = "center";
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 2;
+        ctx.fillStyle = "white";
+        ctx.fillText('You\'ve beat the bugs!', canvas.width / 2 , 170);
+        ctx.strokeText('You\'ve beat the bugs!', canvas.width /2, 170);
+
+        ctx.font = '48px Impact';
+        ctx.textAlign = "center";
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 2;
+        ctx.fillStyle = "white";
+        ctx.fillText('YOU ARE SAFE NOW!', canvas.width / 2 , 220);
+        ctx.strokeText('YOU ARE SAFE NOW!', canvas.width /2, 220);
+
+        ctx.font = '28px Impact';
+        ctx.textAlign = "center";
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 2;
+        ctx.fillStyle = "white";
+        ctx.fillText('Press ENTER to star over again.', canvas.width / 2 , 520);
+        ctx.strokeText('Press ENTER to star over again.', canvas.width /2, 520);
+      }
     }
 
     /* This function initially draws the "game level", it will then call
