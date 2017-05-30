@@ -102,14 +102,14 @@ var Engine = (function(global) {
      * know he won the game.
      */
     function playerReachesWater() {
-      if ( player.y < 74 ) {
+      if ( player.y < 72 ) {
         ctx.font = '28px Impact';
         ctx.textAlign = "center";
         ctx.strokeStyle = "black";
         ctx.lineWidth = 2;
         ctx.fillStyle = "white";
-        ctx.fillText('You\'ve beat the bugs!', canvas.width / 2 , 170);
-        ctx.strokeText('You\'ve beat the bugs!', canvas.width /2, 170);
+        ctx.fillText('You have beaten the bugs!', canvas.width / 2 , 170);
+        ctx.strokeText('You have beaten the bugs!', canvas.width /2, 170);
 
         ctx.font = '48px Impact';
         ctx.textAlign = "center";
