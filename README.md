@@ -19,6 +19,6 @@ Right Arrow: 1 Step right.
 Enter: Reset the game.
 
 
-### Udacity Frogger Arcade Game
+### Udacity Arcade Game
 
 [Rubric](https://review.udacity.com/#!/projects/2696458597/rubric) [Guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
