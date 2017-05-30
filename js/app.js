@@ -124,7 +124,6 @@ for (var i = 0; i < allEnemies.length; i++) {
   // positioning each enemy on each rock row
   allEnemies[i].y = ( ( tileh ) * ( i + 1 ) - 20 );
   // console.log(allEnemies[i].speed);
-   console.log(allEnemies[i].y)
 }
 
 var player = new Player();
