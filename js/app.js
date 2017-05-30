@@ -107,7 +107,7 @@ Player.prototype.handleInput = function (key) {
       }
       break;
     case 'enter':
-      player.reset();
+      player.reset(); // Replace the player at the starting position
   }
 
 }
