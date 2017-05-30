@@ -6,6 +6,11 @@ avoiding the bus that are walking on the stones. The player can move
 horizontally and vertically with the arrow keys. If the player reaches the water
 the player can press the enter key to restart the game.
 
+## Instructions
+
+To load the game open index.html on your preferred browser, To move the player
+press the arrow keys.
+
 ## Controls
 
 Up Arrow: 1 step forward.
@@ -21,4 +26,4 @@ Enter: Reset the game.
 
 ### Udacity Arcade Game
 
-[Rubric](https://review.udacity.com/#!/projects/2696458597/rubric) [Guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+[Rubric](https://review.udacity.com/#!/projects/2696458597/rubric) &  [Guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
