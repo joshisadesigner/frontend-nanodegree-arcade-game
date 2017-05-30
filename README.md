@@ -8,8 +8,8 @@ the player can press the enter key to restart the game.
 
 ## Controls
 
-Up Arrow: 1 step forward
-Down Arrow: 1 step backward
-Left Arrow: 1 Step left
-Right Arrow: 1 Step right
-Enter: Reset the game. 
+Up Arrow: 1 step forward.
+Down Arrow: 1 step backward.
+Left Arrow: 1 Step left.
+Right Arrow: 1 Step right.
+Enter: Reset the game.
